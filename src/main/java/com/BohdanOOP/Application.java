@@ -1,5 +1,7 @@
 package com.BohdanOOP;
 
+import java.util.TreeSet;
+
 public class Application {
     public static void main(String[] args) {
 
@@ -8,6 +10,15 @@ public class Application {
         ChristmasTree myTree2 = new ChristmasTree("shit", "Small", DecorType.ADORNMENT, "Orange");
         ChristmasTree myTree3 = new ChristmasTree("Color lights", "Big", DecorType.LIGHTS, "All");
         ChristmasTree myTree4 = new ChristmasTree("Candles", "Small", DecorType.CANDLES, "White");
+
+        TreeSet<ChristmasTree> tree = new TreeSet<ChristmasTree>();
+        tree.add(myTree);
+        tree.add(myTree1);
+        tree.add(myTree2);
+        tree.add(myTree3);
+        tree.add(myTree4);
+
+            System.out.println(tree);
 
         Flat flat = new Flat("Funny balls", "Medium", DecorType.BALLS, 4 );
         Flat flat1 = new Flat("Cozy candles", "Big", DecorType.CANDLES, 2 );
