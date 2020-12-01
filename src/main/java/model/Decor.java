@@ -1,6 +1,6 @@
-package com.BohdanOOP;
+package model;
 
-public class Decor {
+public class Decor implements Model {
     private String name;
     private String size;
     DecorType decorType;

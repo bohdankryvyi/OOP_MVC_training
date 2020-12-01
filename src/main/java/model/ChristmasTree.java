@@ -1,6 +1,6 @@
-package com.BohdanOOP;
+package model;
 
-public class ChristmasTree extends Decor implements Comparable<ChristmasTree>{
+public class ChristmasTree extends Decor implements Comparable<ChristmasTree> {
     private String colour;
 
     public ChristmasTree(String name, String size, DecorType decorType, String colour) {
@@ -19,7 +19,7 @@ public class ChristmasTree extends Decor implements Comparable<ChristmasTree>{
 
     @Override
     public String toString() {
-        return "ChristmasTree{" + super.toString()+
+        return "ChristmasTree{" + super.toString() +
                 "colour='" + colour + '\'' +
                 '}';
     }
@@ -28,4 +28,6 @@ public class ChristmasTree extends Decor implements Comparable<ChristmasTree>{
     public int compareTo(ChristmasTree o) {
         return colour.compareTo(o.getColour());
     }
+
+
 }

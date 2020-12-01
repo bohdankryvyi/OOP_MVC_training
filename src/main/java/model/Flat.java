@@ -1,4 +1,4 @@
-package com.BohdanOOP;
+package model;
 
 public class Flat extends Decor implements Comparable<Flat> {
 
@@ -19,7 +19,7 @@ public class Flat extends Decor implements Comparable<Flat> {
 
     @Override
     public String toString() {
-        return "Flat{" + super.toString()+
+        return "Flat{" + super.toString() +
                 "rooms=" + rooms +
                 '}';
     }

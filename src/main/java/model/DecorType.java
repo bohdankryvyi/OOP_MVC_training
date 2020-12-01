@@ -1,4 +1,4 @@
-package com.BohdanOOP;
+package model;
 
 public enum DecorType {
     LIGHTS,
